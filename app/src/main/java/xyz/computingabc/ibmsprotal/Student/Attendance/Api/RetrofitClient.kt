@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 import xyz.computingabc.ibmsprotal.Student.Attendance.Api.Api
 
 object RetrofitClient {
-    private const val BASE_URL = "http://192.168.43.93/UniPortal/api/student/"
+    private const val BASE_URL = "http://192.168.1.18/UniPortal/api/student/"
 
     private val okHttpClient = OkHttpClient.Builder()
         .addInterceptor { chain ->
