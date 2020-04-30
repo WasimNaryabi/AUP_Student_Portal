@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="10"
+              android:background="@drawable/main_bg">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="10"
+            >
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_margin="10dp">
+            <TextView
+                    android:text="Subjects"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="10dp"
+            />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/Subjectslist"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

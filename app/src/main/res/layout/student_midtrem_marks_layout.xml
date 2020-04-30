@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="60dp"
+
+              android:weightSum="1"
+              android:background="@android:color/transparent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="#f9f8f8"
+            android:weightSum="5">
+        <TextView
+                android:id="@+id/subjectName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:text="Web Design and Development"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/details"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/marks"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="4"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

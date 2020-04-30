@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">ICS/IT Portal</string>
+    <string name="title_activity_lectures">Lectures</string>
+    <string name="tab_text_1">Lectures</string>
+    <string name="tab_text_2">Outline</string>
+    <string name="action_settings">Settings</string>
+    <string name="DisciplinPrompt">Discipline</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_assignment_home">AssignmentHome</string>
+    <string name="tab_text_3">Tab 3</string>
+    <string name="title_activity_time_table_home">TimeTableHome</string>
+    <string name="title_activity_lectures_home">LecturesHome</string>
+    <string name="title_activity_student_timetable_home">StudentTimetableHOme</string>
+    <string name="title_activity_student_result">StudentResult</string>
+    <string name="title_activity_student_assignments">StudentAssignments</string>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="90dp"
+              android:layout_margin="15dp"
+              android:padding="5dp"
+              android:weightSum="3"
+              android:background="#edecec"
+              >
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+        <TextView
+                android:id="@+id/subjectItem"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Web Design and Development"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:weightSum="3">
+        <TextView
+                android:id="@+id/disciplinItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/main_bg"
+                android:text="CS"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#ffff"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/semesterItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/main_bg"
+                android:text="6th"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#ffff"
+                android:textStyle="bold"/>
+        <TextView
+                android:id="@+id/sectionItem"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="5dp"
+                android:layout_margin="5dp"
+                android:background="@drawable/main_bg"
+                android:text="B"
+                android:gravity="center"
+                android:textSize="14sp"
+                android:textColor="#ffff"
+                android:textStyle="bold"/>
+
+    </LinearLayout>
+
+</LinearLayout>

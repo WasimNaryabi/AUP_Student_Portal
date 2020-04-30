@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        android:layout_gravity="center"
+        app:cardCornerRadius="20dp">
+
+    <LinearLayout
+                  android:orientation="vertical"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:padding="20dp"
+                  android:layout_gravity="center"
+                  android:background="@drawable/alert_dialog_bg">
+
+            <ImageView
+                    android:id="@+id/dialogImage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/ic_offline_pin_24px"/>
+            <TextView
+                    android:id="@+id/dialogMessage"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:text="Alert Dialog Message"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginRight="20dp"
+                     android:textColor="#fff"
+                     android:textSize="22sp"
+                     android:gravity="center"
+                     android:layout_marginTop="20sp"/>
+            <Button
+                    android:id="@+id/btnOk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="ok"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:background="@drawable/round_button"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

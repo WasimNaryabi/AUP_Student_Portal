@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="10"
+              android:background="@drawable/main_bg">
+    <include layout="@layout/toolbar" android:id="@+id/toolbar"/>
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:weightSum="3"
+            android:layout_margin="5dp"
+            android:background="@drawable/round_button">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="5">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="Session :"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:id="@+id/SessionView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:text="Session :"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="5">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="Class :"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:id="@+id/SemesterView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:text="Session :"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+        </LinearLayout>
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="5">
+            <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.5"
+                    android:text="Subject :"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            <TextView
+                    android:id="@+id/SubjectView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3.5"
+                    android:text="Session :"
+                    android:gravity="center"
+                    android:textSize="15sp"/>
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+        <LinearLayout android:layout_width="match_parent"
+                      android:layout_height="wrap_content"
+                      android:orientation="vertical"
+                      android:layout_margin="5dp">
+            <TextView
+                    android:text="Uploaded Lectures"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textSize="25sp"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:layout_marginTop="5dp"
+            />
+
+            <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/lecturesList"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+    </ScrollView>
+    <Button
+            android:text="Add New"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_margin="10dp"
+            android:id="@+id/btnAddNewLecture"
+            android:background="@drawable/round_button"
+    />
+
+</LinearLayout>
